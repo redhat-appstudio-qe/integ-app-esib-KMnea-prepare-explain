@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-ndyr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/kasem_org/integration1-kxor-tenant/integ-app-esib/hacbs-test-project-ndyr@sha256:39d398d9bce8dfb7aee0dcd19ea2ebc2364a7139478ce7ac8df3f7d376c540e5
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}

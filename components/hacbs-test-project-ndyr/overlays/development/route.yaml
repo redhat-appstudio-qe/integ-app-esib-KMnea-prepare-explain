@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: hacbs-test-project-ndyr
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: hacbs-test-project-ndyr
+    app.kubernetes.io/part-of: integ-app-esib
+  name: hacbs-test-project-ndyrd3c1
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: hacbs-test-project-ndyr
+    weight: 100
+status: {}
