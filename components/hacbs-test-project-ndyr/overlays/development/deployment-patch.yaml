@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/kasem_org/integration1-kxor-tenant/integ-app-esib/hacbs-test-project-ndyr@sha256:39d398d9bce8dfb7aee0dcd19ea2ebc2364a7139478ce7ac8df3f7d376c540e5
+      - image: quay.io/redhat-appstudio/sample-image@sha256:841328df1b9f8c4087adbdcfec6cc99ac8308805dea83f6d415d6fb8d40227c1
         name: hacbs-jvm-build-test-project
         resources: {}
 status: {}
